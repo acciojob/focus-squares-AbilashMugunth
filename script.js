@@ -1,11 +1,11 @@
 let squares = document.querySelectorAll(".square");
 
 squares.forEach((square) => {
-  square.addEventListener("mouseenter", (e) => {
+  square.addEventListener("mouseover", (e) => {
     enter(e);
   });
 
-  square.addEventListener("mouseleave", () => {
+  square.addEventListener("mouseout", () => {
     leave();
   });
 });
