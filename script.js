@@ -16,15 +16,15 @@ function enter(e) {
 
   squares.forEach((square) => {
     if (hovered.id !== square.id) {
-      square.classList.add("active");
+      square.style.backgroundColor = "#6f4e37";
     } else {
-      square.classList.remove("active");
+      square.style.backgroundColor = "#E6E6FA";
     }
   });
 }
 
 function leave() {
   squares.forEach((square) => {
-    square.classList.remove("active");
+    square.style.backgroundColor = "#E6E6FA";
   });
 }
